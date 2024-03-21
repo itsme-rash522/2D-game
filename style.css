@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-navbar {
+    width: 100%;
+    height: 7vh;
+    background-color: #1c1c50;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.top-icons {
+    margin-left: 45px;
+}
+
+.top-icons i {
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.other-links {
+    margin-right: 33px;
+}
+
+.other-links i {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* icon hover */
+
+.fbtn:hover {
+    color: rgb(7, 7, 214);
+    cursor: pointer;
+}
+
+.tbtn:hover {
+    color: rgb(0, 191, 255);
+    cursor: pointer;
+}
+
+.ibtn:hover {
+    color: rgb(255, 0, 179);
+    cursor: pointer;
+}
+
+.userbtn:hover {
+    color: rgb(153, 211, 247);
+    cursor: pointer;
+}
+
+.cartbtn:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.heartbtn:hover {
+    color: rgb(255, 0, 106);
+    cursor: pointer;
+}
+
+.btn-login {
+    background-color: transparent;
+    border: none;
+    color: #e0dede;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    color: white;
+}
+
+.btn-register {
+    background-color: transparent;
+    border: none;
+    color: #e0dede;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    color: white;
+}
+
+@media screen and (max-width:500px) {
+    .top-icons {
+        margin-left: 30px;
+    }
+
+    .top-icons i {
+        font-size: 15px;
+    }
+
+    .other-links i {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .top-icons {
+        margin-left: 5px;
+    }
+
+    .top-icons i {
+        font-size: 12px;
+    }
+
+    .other-links {
+        margin-right: 10px;
+    }
+
+    .other-links i {
+        font-size: 12px;
+    }
+}
+
+.searchbtn:hover {
+    color: #1c1c50;
+}
+
+/* Register */
+
+.btn-register2 {
+    width: 300px;
+    height: 6vh;
+    background-color: #1c1c50;
+    color: white;
+    border-color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 7px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.btn-register2:hover {
+    background-color: #30306f;
+}
+
+.ssbg {
+    margin-top: 100px;
+    background-color: rgba(0, 255, 255, 0.23);
+    border-radius: 15px;
+}
+
+/* Latest Products */
+
+.btn-addtocart {
+    width: 200px;
+    height: 6vh;
+    background-color: #1c1c50;
+    color: white;
+    border-color: white;
+    font-size: medium;
+    font-weight: bold;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.btn-addtocart:hover {
+    color: white;
+    background-color: #30306f;
+    border: 4px solid #1c1c50;
+}
+
+.product {
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product img {
+    transition: 0.3s all;
+}
+
+.product:hover img {
+    opacity: 0.8;
+}
+
+/* view all */
+
+.btn-viewAll {
+    width: 120px;
+    height: 7vh;
+    color: #1c1c50;
+    background-color: white;
+    border-color: #1c1c50;
+    font-size: medium;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.btn-viewAll:hover {
+    border-color: #d0d0d0;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* star 5 */
+
+.star {
+    padding: 10px 0;
+}
+
+.star i:hover {
+    color: orange;
+}
+
+/* options */
+
+.option {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.option:hover {
+    color: white;
+    background-color: #1c1c50;
+}
+
+/* one view */
+
+.fav-icon {
+    font-size: xx-large;
+    color: #1c1c506a;
+    margin-bottom: -30px;
+}
+
+.fav-icon:hover {
+    color: rgb(255, 0, 106);
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 32%;
+    cursor: pointer;
+}
+
+/* buy now btn */
+
+.btn-buyNow {
+    width: 200px;
+    height: 6vh;
+    background-color: green;
+    color: white;
+    border-color: white;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-buyNow:hover {
+    color: white;
+    background-color: rgba(0, 128, 0, 0.763);
+    border: 4px solid green;
+}
+
+.qty {
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border: 3px solid #1c1c50;
+}
+
+/* table */
+
+.t {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+}
+
+.t tr,
+td {
+    border-bottom: 5px solid rgba(0, 0, 0, 0.308);
+    border-color: #f2f3f7;
+}
+
+.t th {
+    font-size: 20px;
+    padding-top: 20;
+}
+
+/* watchlist */
+
+.fav-icon2 {
+    font-size: xx-large;
+    color: rgb(255, 0, 106);
+    margin-bottom: -30px;
+}
+
+/* advaced search btn */
+
+.btn-advanced {
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    color: #1c1c50;
+}
+
+.btn-advanced:hover {
+    color: white;
+    background-color: #1c1c50;
+    border: none;
+}
+
+/* serch btn */
+
+.btn-search {
+    width: 120px;
+    height: 35px;
+    background-color: transparent;
+    text-align: center;
+    padding-bottom: 5px;
+    border: none;
+}
+
+.btn-search:hover {
+    background-color: #1c1c50;
+    color: white;
+    border-radius: 20px;
+}
+
+/* button hover animation 1 */
+
+.btn-animation1::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #1c1c50;
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.btn-animation1:hover::before,
+.btn-animation1:focus::before {
+    transform: scaleX(1);
+}
+
+.btn-animation1 {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+}
+
+.btn-animation1:hover,
+.btn-animation1:focus {
+    color: white;
+}
+
+/* footer */
+
+.footer {
+    color: #d0d0d0;
+    font-size: 14px;
+    background: #1c1c50;
+}
+
+.footer-top {
+    padding: 60px;
+    background: #1c1c50;
+    color: white;
+}
+
+.b-icon {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-links {
+    margin-bottom: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+    line-height: 2;
+}
+
+.copyright {
+    text-align: center;
+    justify-content: center;
+}
