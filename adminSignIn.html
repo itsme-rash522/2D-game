@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Admin Sign In - NEW TECH</title>
+    <link rel="icon" href="image/newTechLog.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <!-- top navbar -->
+
+    <div class="top-navbar">
+        <div class="top-icons">
+            <i class="fa-brands fa-facebook-f fbtn"></i>
+            <i class="fa-brands fa-twitter tbtn"></i>
+            <i class="fa-brands fa-instagram ibtn"></i>
+        </div>
+        <div class="other-links">
+            <a href="login.html"> <button class="btn-login">Log in</button></a>
+            <a href="register.html"> <button class="btn-register ms-4 ms-md-4 me-5">Register</button></a>
+
+            <a href="myAccount.html"><i class="fa-solid fa-user userbtn"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping cartbtn"></i></a>
+            <a href="watchlist.html"><i class="fa-regular fa-heart heartbtn"></i></a>
+        </div>
+    </div>
+
+    <!-- admin log in -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-5 ssbg">
+
+                <img src="image/newTechLog.png" class="mt-5 mx-auto d-block" width="200px" />
+                <h1 class="text-center" style="font-family:'Raleway', sans-serif; color: #1c1c50;">NEW
+                    TECH</h1>
+                <h2 class="text-center mt-2 mt-lg-5"
+                    style="font-family:'Raleway', sans-serif; font-weight: bolder; color: #1c1c50;">Hi,<br /> Welcome to
+                    NEW TECH <br /> Admin Panel</h2>
+
+            </div>
+
+            <div class="col-lg-7">
+
+                <form class="m-lg-5 mt-5 ms-2 me-0">
+                    <h1 style="font-family: 'Raleway', sans-serif;
+                    font-family: 'Roboto', sans-serif; font-weight: bold; color: #1c1c50;">Admin Panel - Log In</h1>
+                    <h5 class="mt-3">Login with your Admin ID</h5>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-9 mt-3">
+                            <label for="name" class="form-label">Admin ID</label>
+                            <input type="email" class="form-control" id="mail" placeholder="admin_@####" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-9 mt-3">
+                            <label for="name" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="********" required>
+                        </div>
+                    </div>
+
+                    <span for="login_check"><a href="" style="text-decoration: none;">Forgot Password ?</a></span><br />
+
+                    <button type="button" class="btn-register2 mt-4" onclick="adminPanel();">Log In</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer" style="margin-top: 50px;">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <h1>NEW TECH</h1>
+                        <p>
+                            No 361 Galle Road, <br>
+                            Colombo 03, Sri Lanka. <br>
+                        </p>
+                        <br />
+                        <strong id="ContactUs"><i class="fas fa-phone"></i> HOTLINE : +94 123 123 123</strong>
+                        <br /><br />
+                        <strong><i class="fa-solid fa-envelope"></i>
+                            Email : newtech@gmail.com <br /><br /></strong>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4 style="color: aqua;" id="quick-link">Quick Links</h4>
+                        <ul class="h6 mt-3">
+                            <a href="index.html" style="text-decoration: none;">
+                                <li>Home</li>
+                            </a>
+                            <a href="products.html" style="text-decoration: none;">
+                                <li>Products</li>
+                            </a>
+                            <a href="#AboutUs" style="text-decoration: none;">
+                                <li>About Us</li>
+                            </a>
+                            <a href="#ContactUs" style="text-decoration: none;">
+                                <li>Contact Us</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h4 style="color: aqua;" id="AboutUs">About New Tech</h4>
+                        <p class="mt-4">New Tech (Pvt) Ltd is one of the leading online store that buys and sells
+                            quality electronic
+                            items in Sri Lanka.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 b-icon">
+                        <h4 style="color: aqua;">Our Social Network</h4>
+                        <h6 class="mt-4">Keep In Touch</h6>
+                        <div class="ms-0 mt-3">
+                            <i class="fa-brands fa-facebook-f fbtn" style="padding: 7px;"></i>
+                            <i class="fa-brands fa-twitter tbtn" style="padding: 7px;"></i>
+                            <i class="fa-brands fa-instagram ibtn" style="padding: 7px;"></i>
+                            <i class="fa-brands fa-linkedin-in fbtn" style="padding: 7px;"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container py-4">
+            <div class="copyright">
+                Copyright &copy; 2023 <strong>New Tech</strong>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- js links -->
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>NEW TECH - Our Products</title>
+    <link rel="icon" href="image/newTechLog.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet" />
+
+    <!-- Icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+
+<body style="height: 6100px;">
+
+    <div class="sticky-top">
+
+        <!-- top navbar -->
+
+        <div class="top-navbar">
+            <div class="top-icons">
+                <i class="fa-brands fa-facebook-f fbtn"></i>
+                <i class="fa-brands fa-twitter tbtn"></i>
+                <i class="fa-brands fa-instagram ibtn"></i>
+            </div>
+            <div class="other-links">
+                <a href="login.html"> <button class="btn-login">Log in</button></a>
+                <a href="register.html"> <button class="btn-register ms-4 ms-md-4 me-5">Register</button></a>
+
+                <a href="myAccount.html"><i class="fa-solid fa-user userbtn"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping cartbtn"></i></a>
+                <a href="watchlist.html"><i class="fa-regular fa-heart heartbtn"></i></a>
+            </div>
+        </div>
+
+        <!-- navbar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <div class="container-fluid">
+
+                <!-- logo -->
+
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@900&family=Roboto&display=swap');
+                </style>
+
+                <a href="index.html" class="navbar-brand mb-0 h1"
+                    style="font-family:'Raleway', sans-serif; color: #1c1c50; font-weight: 900;">
+                    <img src="image/newTechLog.png" alt="NEW TECH logo" width="100" />
+                    NEW TECH
+                </a>
+
+                <!-- nav-menu -->
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#n1"
+                    aria-controls="n1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: #1c1c50;"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="n1">
+                    <ul class="navbar-nav ms-5 nav-menu" style="font-size: larger;">
+
+                        <li class="nav-item active ms-md-2 ms-xl-4">
+                            <a href="index.html" class="nav-link active">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown ms-md-2 ms-xl-4">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="products.html#phone">Smart Phones</a></li>
+                                <li><a class="dropdown-item" href="products.html#laptop">Laptops</a></li>
+                                <li><a class="dropdown-item" href="products.html#TV">TVs</a></li>
+                                <li><a class="dropdown-item" href="products.html#AC">Air Conditioners</a></li>
+                                <li><a class="dropdown-item" href="products.html#fridge">Refrigerators</a></li>
+                                <li><a class="dropdown-item" href="products.html#washing-machines">Washing Machines</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item ms-md-2 ms-xl-4">
+                            <a class="nav-link" href="#AboutUs">About Us</a>
+                        </li>
+
+                        <li class="nav-item ms-md-2 ms-xl-4">
+                            <a class="nav-link" href="#ContactUs">Contact Us</a>
+                        </li>
+
+                        <!-- advanced search -->
+
+                        <div class="dropdown ms-5 mt-2">
+
+                            <button type="button"
+                                style="border: none; background-color: transparent; font-weight: bold;"
+                                class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                                data-bs-auto-close="outside">
+                                Advanced Search
+                            </button>
+
+                            <form class="dropdown-menu p-4">
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected style="font-weight: bold;">Select Product</option>
+                                    <option value="1">Smart Phone</option>
+                                    <option value="2">Laptop</option>
+                                    <option value="3">TV</option>
+                                    <option value="4">AC</option>
+                                    <option value="5">Fridge</option>
+                                    <option value="6">Other</option>
+                                </select>
+                                <br />
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected style="font-weight: bold;">Select Brand</option>
+                                    <option value="1">Samsung</option>
+                                    <option value="2">Apple</option>
+                                    <option value="3">Huawei</option>
+                                    <option value="4">TCL</option>
+                                    <option value="5">LG</option>
+                                </select>
+                                <br />
+                                <button type="button" class="btn-advanced btn-animation1"
+                                    onclick="search();">Search</button>
+                            </form>
+
+                        </div>
+
+                    </ul>
+
+                    <form class="d-flex mb-0 ms-auto">
+                        <input class="form-control me-2" type="search" placeholder="Search Products..." />
+                        <button class="d-flex align-items-end btn-search btn-animation1" type="button"
+                            onclick="search();"><i class="fa-solid fa-magnifying-glass" style="padding: 4px;"></i>
+                            Search</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+    <!-- all products -->
+
+    <section id="featured" class="my-5 pb-5">
+
+        <!-- phones -->
+
+        <div class="container text-center mt-5 py-5">
+            <h1 style="font-weight: bold;">All Products</h1>
+            <hr style="width: 100px; height: 6px; background-color: blue;" class="mx-auto" />
+            <p style="font-size: larger;">Best Price in Sri Lanka.</p>
+            <h2 style="font-family: 'Raleway', sans-serif;
+            font-family: 'Roboto', sans-serif; font-weight: bold; color: #1c1c50;" id="phone">SMART PHONES</h2>
+            <hr>
+        </div>
+
+        <div class="row mx-auto container-fluid">
+
+            <!-- phone 1 -->
+
+            <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                    <i class="fa-solid fa-heart text-end fav-icon"></i>
+                </div>
+
+                <a href="productOneView1.html"><img src="image/p1.jpg" class="img-fluid" /></a>
+                <h5 class="p-name">Samsung Galaxy S23</h5>
+                <p>(8GB + 256GB) (Cream)</p>
+                <h4 class="p-price">Rs.334,999</h4>
+
+                <div class="star" style="color: #1c1c5043;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <button class="btn-addtocart mx-auto">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <!-- phone 2 -->
+
+            <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                    <i class="fa-solid fa-heart text-end fav-icon"></i>
+                </div>
+
+                <img src="image/p2.jpg" class="img-fluid" />
+                <h5 class="p-name">Samsung Galaxy S23 Ultra</h5>
+                <p>(12GB + 256GB) (Green)</p>
+                <h4 class="p-price">Rs.449,999</h4>
+
+                <div class="star" style="color: #1c1c5043;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <button class="btn-addtocart mx-auto">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <!-- phone 3 -->
+
+            <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                    <i class="fa-solid fa-heart text-end fav-icon"></i>
+                </div>
+
+                <img src="image/p3.jpg" class="img-fluid" />
+                <h5 class="p-name">iPhone 14 Pro</h5>
+                <p>(6GB + 128GB) (Black)</p>
+                <h4 class="p-price">Rs.549,999</h4>
+
+                <div class="star" style="color: #1c1c5043;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <button class="btn-addtocart mx-auto">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <!-- phone 4 -->
+
+            <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                    <i class="fa-solid fa-heart text-end fav-icon"></i>
+                </div>
+
+                <img src="image/p4.jpg" class="img-fluid" />
+                <h5 class="p-name">iPhone 14 Pro Max</h5>
+                <p>(6GB + 128GB) (Gold)</p>
+                <h4 class="p-price">Rs.599,999</h4>
+
+                <div class="star" style="color: #1c1c5043;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <button class="btn-addtocart mx-auto">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <!-- phone 5 -->
+
+            <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                    <i class="fa-solid fa-heart text-end fav-icon"></i>
+                </div>
+
+                <img src="image/p5.jpg" class="img-fluid" />
+                <h5 class="p-name">Huawei P50 Pro</h5>
+                <p>(8GB + 256GB) (Black)</p>
+                <h4 class="p-price">Rs.247,999</h4>
+
+                <div class="star" style="color: #1c1c5043;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <button class="btn-addtocart mx-auto">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <!-- phone 6 -->
+
+            <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                    <i class="fa-solid fa-heart text-end fav-icon"></i>
+                </div>
+
+                <img src="image/p6.jpg" class="img-fluid" />
+                <h5 class="p-name">TCL 20 Pro 5G</h5>
+                <p>(6GB + 256GB) (Marine Blue)</p>
+                <h4 class="p-price">Rs.134,799</h4>
+
+                <div class="star" style="color: #1c1c5043;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <button class="btn-addtocart mx-auto">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <!-- phone 7 -->
+
+            <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                    <i class="fa-solid fa-heart text-end fav-icon"></i>
+                </div>
+
+                <img src="image/p7.jpg" class="img-fluid" />
+                <h5 class="p-name">Huawei Nova 9 SE</h5>
+                <p>(8GB + 128GB) (Blue)</p>
+                <h4 class="p-price">Rs.125,999</h4>
+
+                <div class="star" style="color: #1c1c5043;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <button class="btn-addtocart mx-auto">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <!-- phone 8 -->
+
+            <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                    <i class="fa-solid fa-heart text-end fav-icon"></i>
+                </div>
+
+                <img src="image/p8.jpg" class="img-fluid" />
+                <h5 class="p-name">Samsung Galaxy A13</h5>
+                <p>(4GB + 128GB) (Black)</p>
+                <h4 class="p-price">Rs.94,999</h4>
+
+                <div class="star" style="color: #1c1c5043;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <button class="btn-addtocart mx-auto">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <!-- phone 9 -->
+
+            <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                    <i class="fa-solid fa-heart text-end fav-icon"></i>
+                </div>
+
+                <img src="image/p9.jpg" class="img-fluid" />
+                <h5 class="p-name">Huawei Nova Y61</h5>
+                <p>(6GB + 64GB) (Blue)</p>
+                <h4 class="p-price">Rs.69,999</h4>
+
+                <div class="star" style="color: #1c1c5043;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <button class="btn-addtocart mx-auto">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <!-- phone 10 -->
+
+            <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                    <i class="fa-solid fa-heart text-end fav-icon"></i>
+                </div>
+
+                <img src="image/p10.jpg" class="img-fluid" />
+                <h5 class="p-name">Huawei Nova Y61</h5>
+                <p>(6GB + 64GB) (Green)</p>
+                <h4 class="p-price">Rs.69,999</h4>
+
+                <div class="star" style="color: #1c1c5043;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <button class="btn-addtocart mx-auto">
+                    ADD TO CART
+                </button>
+
+            </div>
+
+            <!-- banner -->
+
+            <div class="container">
+                <img src="image/img4.jpg" class="mx-auto d-block img-fluid" />
+            </div>
+
+            <!-- laptops -->
+
+            <div class="container text-center mt-3 py-5">
+                <p style="font-size: larger;">Newest Technologies Now on NEW TECH.</p>
+                <h2 style="font-family: 'Raleway', sans-serif;
+            font-family: 'Roboto', sans-serif; font-weight: bold; color: #1c1c50;" id="laptop">LAPTOPS</h2>
+                <hr>
+            </div>
+
+            <div class="row mx-auto container-fluid">
+
+                <!-- lap 1 -->
+
+                <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/lap1.jpg" class="img-fluid" />
+                    <h5 class="p-name">ASUS ROG Strix G15</h5>
+                    <p>(G513RC-HN011W) Eclipse Gray</p>
+                    <h4 class="p-price">Rs.689,999</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- lap 2 -->
+
+                <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/lap2.jpg" class="img-fluid" />
+                    <h5 class="p-name">ASUS TUF Gaming F17</h5>
+                    <p>(FX507HCB-HN140W) Gray</p>
+                    <h4 class="p-price">Rs.645,499</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- lap 3 -->
+
+                <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/lap3.jpg" class="img-fluid" />
+                    <h5 class="p-name">ASUS TUF Dash F15 Gaming</h5>
+                    <p>(FX515ZE-HN160W) Off Black</p>
+                    <h4 class="p-price">Rs.534,999</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- lap 4 -->
+
+                <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/lap4.jpg" class="img-fluid" />
+                    <h5 class="p-name">MSI Alpha 15 Gaming</h5>
+                    <p>(ALPHA15 B5EEK) Black</p>
+                    <h4 class="p-price">Rs.494,990</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- lap 5 -->
+
+                <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/lap5.jpg" class="img-fluid" />
+                    <h5 class="p-name">MSI Katana GF66</h5>
+                    <p>(MSI-GF66KAT12UEOK) Black</p>
+                    <h4 class="p-price">Rs.483,299</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- lap 6 -->
+
+                <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/lap6.jpg" class="img-fluid" />
+                    <h5 class="p-name">MSI Sword 15</h5>
+                    <p>(SWD15-A12UC-I5) White</p>
+                    <h4 class="p-price">Rs.368,990</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- lap 7 -->
+
+                <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/lap7.jpg" class="img-fluid" />
+                    <h5 class="p-name">ASUS Vivobook 15</h5>
+                    <p>(X1502ZA-EJ281W) Quiet Blue</p>
+                    <h4 class="p-price">Rs.289,999</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- lap 8 -->
+
+                <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/lap8.jpg" class="img-fluid" />
+                    <h5 class="p-name">Dell Inspiron 3520</h5>
+                    <p>(DELL14 i3520e) Silver</p>
+                    <h4 class="p-price">Rs.255,599</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- lap 9 -->
+
+                <div class="product text-center col-lg-3 col-md-4 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/lap9.jpg" class="img-fluid" />
+                    <h5 class="p-name">ASUS VivoBook V15</h5>
+                    <p>(X513EA-BQ3410W) Blue</p>
+                    <h4 class="p-price">Rs.239,990</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- other products -->
+
+                <div class="container text-center py-5">
+                    <p style="font-size: larger;">Newest Technologies Now on NEW TECH.</p>
+                    <h2 style="font-family: 'Raleway', sans-serif;
+                font-family: 'Roboto', sans-serif; font-weight: bold; color: #1c1c50;" id="other-products">OTHER
+                        PRODUCTS</h2>
+                    <hr>
+                </div>
+
+                <!-- other 1 -->
+
+                <div class="product text-center col-lg-4 col-md-6 py-5" id="TV">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/t1.avif" class="img-fluid" />
+                    <h5 class="p-name">SAMSUNG AU8000 CRYSTAL UHD 4K <br> SMART TV (2022) 55"</h5>
+                    <p style="text-decoration: line-through; font-size: large;">Rs.399,990</p>
+                    <h4 class="p-price">Rs.369,990</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- other 2 -->
+
+                <div class="product text-center col-lg-4 col-md-6 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/t2.avif" class="img-fluid" />
+                    <h5 class="p-name">SAMSUNG AU7700 CRYSTAL 4K UHD <br> SMART TV 43" (2021)</h5>
+                    <p style="text-decoration: line-through; font-size: large;">Rs.289,990</p>
+                    <h4 class="p-price">Rs.254,990</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- other 3 -->
+
+                <div class="product text-center col-lg-4 col-md-6 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/t3.jpg" class="img-fluid" width="300px" />
+                    <h5 class="p-name">SAMSUNG FULL HD <br> SMART LED TV 43"</h5>
+                    <p style="text-decoration: line-through; font-size: large;">Rs.229,990</p>
+                    <h4 class="p-price">Rs.199,990</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- other 4 -->
+
+                <div class="product text-center col-lg-4 col-md-6 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/t4.jpg" class="img-fluid" width="220px" />
+                    <h5 class="p-name">SGL 32'' FULL HD ANDROID SMART TV</h5>
+                    <p style="text-decoration: line-through; font-size: large;">Rs.129,990</p>
+                    <h4 class="p-price">Rs.94,990</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- other 5 -->
+
+                <div class="product text-center col-lg-4 col-md-6 py-5" id="fridge">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/t5.png" class="img-fluid" width="222px" />
+                    <h5 class="p-name">SAMSUNG 674L INVERTER REFRIGERATOR <br> (Platinum Silver)</h5>
+                    <p style="text-decoration: line-through; font-size: large;">Rs.789,990</p>
+                    <h4 class="p-price">Rs.669,990</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- other 6 -->
+
+                <div class="product text-center col-lg-4 col-md-6 py-5">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/t6.jpg" class="img-fluid" />
+                    <h5 class="p-name">LG 250L Refrigerator <br> (Blue)</h5>
+                    <p style="text-decoration: line-through; font-size: large;">Rs.174,990</p>
+                    <h4 class="p-price">Rs.151,990</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- other 7 -->
+
+                <div class="product text-center col-lg-4 col-md-6 py-5" id="AC">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/t7.jpg" class="img-fluid" />
+                    <h5 class="p-name">SAMSUNG SPLIT TYPE WINDFREE WIFI INVERTER AIR CONDITIONER 12000BTU</h5>
+                    <p style="text-decoration: line-through; font-size: large;">Rs.389,990</p>
+                    <h4 class="p-price">Rs.315,990</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+                <!-- other 8 -->
+
+                <div class="product text-center col-lg-4 col-md-6 py-5" id="washing-machines">
+
+                    <div class="row text-end pb-5" style="margin-top: -30px; margin-right: -7px;">
+                        <i class="fa-solid fa-heart text-end fav-icon"></i>
+                    </div>
+
+                    <img src="image/t8.jpg" class="img-fluid" width="220px" />
+                    <h5 class="p-name">SAMSUNG FULLY AUTO TOP LOADING WASHING MACHINE 7KG</h5>
+                    <p style="text-decoration: line-through; font-size: large;">Rs.134,990</p>
+                    <h4 class="p-price">Rs.112,990</h4>
+
+                    <div class="star" style="color: #1c1c5043;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <button class="btn-addtocart mx-auto">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- customer sevice -->
+
+    <section class="container-fluid mt-5" style="background-color: aqua; margin-bottom: -50px;">
+
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6">
+                <i class="fa-solid fa-truck-fast mb-3 mt-5" style="font-size: 35px;"></i>
+                <h5>Free Islandwide Delivery</h5>
+                <p class="mb-5">For orders above Rs.100,000</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <i class="fa-solid fa-cart-arrow-down mb-3 mt-5" style="font-size: 35px;"></i>
+                <h5>Best Price Guarantee</h5>
+                <p class="mb-5">Lowest possible prices</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <i class="fa-regular fa-credit-card mb-3 mt-5" style="font-size: 35px;"></i>
+                <h5>Easy Payment Plans</h5>
+                <p class="mb-5">Instalment plans, offers & more</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <i class="fa-solid fa-headset mb-3 mt-5" style="font-size: 35px;"></i>
+                <h5>After Sales Service</h5>
+                <p class="mb-5">Customer support</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="footer" style="margin-top: 50px;">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <h1>NEW TECH</h1>
+                        <p>
+                            No 361 Galle Road, <br>
+                            Colombo 03, Sri Lanka. <br>
+                        </p>
+                        <br />
+                        <strong id="ContactUs"><i class="fas fa-phone"></i> HOTLINE : +94 123 123 123</strong>
+                        <br /><br />
+                        <strong><i class="fa-solid fa-envelope"></i>
+                            Email : newtech@gmail.com <br /><br /></strong>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4 style="color: aqua;" id="quick-link">Quick Links</h4>
+                        <ul class="h6 mt-3">
+                            <a href="index.html" style="text-decoration: none;">
+                                <li>Home</li>
+                            </a>
+                            <a href="products.html" style="text-decoration: none;">
+                                <li>Products</li>
+                            </a>
+                            <a href="#AboutUs" style="text-decoration: none;">
+                                <li>About Us</li>
+                            </a>
+                            <a href="#ContactUs" style="text-decoration: none;">
+                                <li>Contact Us</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <h4 style="color: aqua;" id="AboutUs">About New Tech</h4>
+                        <p class="mt-4">New Tech (Pvt) Ltd is one of the leading online store that buys and sells
+                            quality electronic
+                            items in Sri Lanka.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 b-icon">
+                        <h4 style="color: aqua;">Our Social Network</h4>
+                        <h6 class="mt-4">Keep In Touch</h6>
+                        <div class="ms-0 mt-3">
+                            <i class="fa-brands fa-facebook-f fbtn" style="padding: 7px;"></i>
+                            <i class="fa-brands fa-twitter tbtn" style="padding: 7px;"></i>
+                            <i class="fa-brands fa-instagram ibtn" style="padding: 7px;"></i>
+                            <i class="fa-brands fa-linkedin-in fbtn" style="padding: 7px;"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container py-4">
+            <div class="copyright">
+                Copyright &copy; 2023 <strong>New Tech</strong>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- js links -->
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
